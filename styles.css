@@ -4,8 +4,14 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-size: cover;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
 header{
     position: fixed;
+    z-index: 2;
     width: 100%;
     background-color: #00000070;
 }
@@ -23,7 +29,7 @@ nav a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin: 20px;
+    margin: 10px;
     padding: 10px 30px;
 }
 nav a:hover{
@@ -47,6 +53,7 @@ nav a:hover{
 }
 .info{
     background-color: #00000070;
+    border-radius: 5px 0 5px 0;
     margin-bottom: 40px;
     color:#ffffff;
     padding: 10px 40px;
@@ -55,6 +62,7 @@ nav a:hover{
     font-size: 40px;
 }
 .info h2{
+    text-shadow:0px 0px 7px #ffffff;
     float: right;
     font-family:cursive;
     font-weight: lighter;
@@ -88,7 +96,6 @@ nav a:hover{
     border-top: 3px solid #dc143c;
     text-align: center;
     width: 100%;
-    background-color: black;
 }
 .project{
     margin: 0 auto;
@@ -100,12 +107,69 @@ nav a:hover{
     width: 100%;
 }
 .items{
+    position: relative;
+    z-index: 1;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 40px;
     height: 200px;
     width: 200px;
-    background-color: #b12340;
+    background-color: black;
+    border-radius: 10px;
+}
+.items img{
+    border: 1px solid #b12340;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.item-button-1{
+    position: absolute;
+    left: 35px;
+    top: 50px;
+}
+.item-button-2{
+    position: absolute;
+    left: 35px;
+    top: 100px;
+}
+.item-button-1,.item-button-2{
+    display: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    background-color: #00000080;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+}
+.item-button-1{
+    padding: 10px 23.5px;
+}
+.items:hover .item-button-1{
+    display: inline;
+}
+.items:hover .item-button-2{
+    display: inline;
+}
+.items:hover .item-img{
+    opacity: 0.5;
+}
+.item-button-1:hover{
+    animation-name: item-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.item-button-2:hover{
+    animation-name: item-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes item-color {
+    100%{
+        background-color: black;
+    }
+    
 }
 .project-button a{
     font-weight: normal;
@@ -143,15 +207,14 @@ nav a:hover{
     animation-fill-mode: forwards;
 }
 .contact{
-    background-color: black;
     text-align: center;
 }
 .contact div{
     border-top: 3px solid #dc143c;
 }
 .contact img{
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
     margin-right: 40px;
 }
 .contact img {
@@ -159,4 +222,35 @@ nav a:hover{
   }
 .contact  img:hover {
     transform: rotate(360deg);
+  }
+  footer{
+      border-top: 3px solid #dc143c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+  .copyright{
+      margin-top: 40px;
+      text-align: center;
+      background-color: #b12340;
+      width: 700px;
+      border-radius: 10px 10px 0 0;
+  }
+  .copyright p{
+      padding: 10px 10px;
+      
+      color: #00000080;
+  }
+  .copyright div{
+      padding-bottom: 10px;
+  }
+  .copyright a{
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      margin-right: 10px;
+      color: black;
+  }
+  .copyright a:hover{
+      color: white;
   }

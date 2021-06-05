@@ -68,18 +68,15 @@ nav a:hover{
     90%{
         left: -10%;
     }
+    95%{
+        left: 5%;
+    }
     100%{
         left: 0;
     }
     
 }
-@keyframes motion-out {
 
-    100%{
-        left: 0;
-    }
-    
-}
 .info h1{
     font-size: 40px;
 }

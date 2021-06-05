@@ -65,10 +65,10 @@ nav a:hover{
 }
 @keyframes motion-in {
 
-    90%{
+    80%{
         left: -10%;
     }
-    95%{
+    90%{
         left: 5%;
     }
     100%{

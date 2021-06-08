@@ -5,4 +5,6 @@ function come(){
     info.setAttribute('style','animation-name:motion-in;animation-duration:1s;animation-fill-mode:forwards;');
     button.setAttribute('style','animation-name:motion-in;animation-duration:1.1s;animation-fill-mode:forwards;');
 }
-(background.style.backgroundImage).onload = come();
+window.onload = function() {
+  setTimeout(come(),3000);
+}

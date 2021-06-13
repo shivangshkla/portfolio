@@ -120,6 +120,9 @@ header a:hover{
         width: 60%;
         text-align: left;
     }
+    .about p:last-of-type{
+        margin-bottom: 70px;
+    }
     .container{
         margin: 20px auto;
         display: flex;

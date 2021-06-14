@@ -15,4 +15,7 @@ window.onscroll = () => {
         menuText3.classList.remove('nav-after');
     }
 };
-
+function navScroll(){
+    scrollBy(0,-70);
+}
+window.onhashchange = navScroll;

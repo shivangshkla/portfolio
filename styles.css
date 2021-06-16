@@ -51,7 +51,7 @@ header a::before{
     background-color: black;
 }
 header a:hover::before{
-    animation: move 0.5s forwards;
+    animation: move 1s forwards;
 }
 @keyframes move {
     to{

@@ -49,6 +49,7 @@ header a::before{
     width: 100%;
     height: 5px;
     background-color: black;
+    transition: 0.3s ease-in-out;
 }
 header a:hover::before{
     animation: move 1s forwards;

@@ -52,7 +52,7 @@ header a::before{
     transition: 0.3s ease-in-out;
 }
 header a:hover::before{
-    animation: move 1s forwards;
+    animation: move 0.6s forwards;
 }
 @keyframes move {
     to{

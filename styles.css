@@ -137,11 +137,12 @@ header a:hover::before{
     }
     .about p{
         font-size: 20px;
-        font-family: "kaushian",Arial, Helvetica, sans-serif;
+        font-family: "ostrich",Arial, Helvetica, sans-serif;
         margin: 20px auto;
         color: white;
         width: 60%;
         text-align: left;
+        font-weight:lighter;
     }
     .about p:last-of-type{
         margin-bottom: 70px;

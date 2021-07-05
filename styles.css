@@ -3,14 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: "ostrich";
-    src: url(fonts/ostrich-regular.ttf);
-}
-@font-face {
-    font-family: "kaushian";
-    src: url(fonts/KaushanScript-Regular.otf);
-}
 
 header{
     position: fixed;
@@ -74,7 +66,6 @@ header a:hover::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     height: 90vh;
 }
 .intro img{
@@ -85,10 +76,12 @@ header a:hover::before{
 }
 .intro h1{
     position: relative;
+    overflow-x: hidden;
     z-index: 1;
     width: max-content;
-    font-family: "ostrich",Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
 }
 .intro h1::before, .intro h1::after{
     content: '';
@@ -137,12 +130,10 @@ header a:hover::before{
     }
     .about p{
         font-size: 20px;
-        font-family: "ostrich",Arial, Helvetica, sans-serif;
         margin: 20px auto;
         color: white;
         width: 60%;
         text-align: left;
-        font-weight:lighter;
     }
     .about p:last-of-type{
         margin-bottom: 70px;

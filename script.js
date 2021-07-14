@@ -24,7 +24,3 @@ window.onscroll = () => {
         $menuText3.removeClass('after')
     }
 };
-function navScroll(){
-    scrollBy(0,-70);
-}
-window.onhashchange = navScroll;
